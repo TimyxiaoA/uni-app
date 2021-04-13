@@ -15,6 +15,14 @@ $http.beforeRequest = function (options) {
   })
 }
 
+uni.$showMsg = function (title="获取数据失败!", duration = 1500) {
+  return uni.showToast({
+    title,
+    duration,
+    icon: 'none'
+  })
+}
+
 // 请求完成之后做一些事情
 $http.afterRequest  = function () {
   uni.hideLoading()

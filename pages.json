@@ -15,8 +15,28 @@
             "path" : "pages/my/my",
             "style" : {}
         }],
+   "subPackages":[
+     {
+       "root": "subpkg",
+       "pages": [{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :{}
+                 }
+            ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+     }
+   ],
 	
   "tabBar": {
+      "selectedColor":"#c00000",
       "list": [{
         "pagePath": "pages/home/home",
         "text": "首页",
