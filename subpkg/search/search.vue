@@ -87,8 +87,8 @@
       // 清空搜索历史记录
       clearHistory() {
         // 清空搜索历史和本地储存
-         this.historyList = []
-         uni.setStorageSync('kw', '[]')
+        this.historyList = []
+        uni.setStorageSync('kw', '[]')
       },
       // 点击跳转到商品列表页面
       gotoGoodsList(kw) {
