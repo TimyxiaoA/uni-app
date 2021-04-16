@@ -20,7 +20,8 @@
           <!-- 二级分类下的三级分类 -->
           <view class="cate-lv3-list">
             <!-- 三级分类 item项 -->
-            <view class="cate-lv3-item" v-for="(item3, index3) in item2.children" :key="item3">
+            <view class="cate-lv3-item" v-for="(item3, index3) in item2.children" :key="item3"
+              @click="gotoGoodsList(item3)">
               <image :src="item3.cat_icon"></image>
               <text>{{item3.cat_name}}</text>
             </view>
@@ -78,6 +79,12 @@
         console.log(e)
         uni.navigateTo({
           url: '/subpkg/search/search'
+        })
+      },
+      // 点击三级分类项跳转到商品列表页面
+      gotoGoodsList(item3) {
+        uni.navigateTo({
+          url: '/subpkg/goods_list/goods_list?cid=' + item3.cat_id
         })
       }
     }

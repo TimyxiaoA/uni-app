@@ -6,7 +6,8 @@ import { $http } from '@escook/request-miniprogram'
 
 uni.$http = $http
 // 基准路径
-$http.baseUrl = 'https://www.uinav.com'
+// $http.baseUrl = 'https://www.uinav.com'
+$http.baseUrl = 'https://api-hmugo-web.itheima.net'
 
 // 请求开始之前做一些事情
 $http.beforeRequest = function (options) {
